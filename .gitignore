@@ -1,5 +1,7 @@
 adm/root.mk
 layers/layer*/*/build
+layers/layer*/*/dist
+layers/layer*/*/*.egg-info
 layers/xlayer*/*/build
 layers/download_archive
 doc/_build

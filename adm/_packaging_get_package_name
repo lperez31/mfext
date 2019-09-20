@@ -18,9 +18,6 @@ env = {}
 if mod == "mfext":
     env['MFMODULE_HOME'] = os.environ['MFEXT_HOME']
     env['MFMODULE_LOWERCASE'] = mod
-elif mod == "mfcom":
-    env['MFMODULE_HOME'] = os.environ['MFCOM_HOME']
-    env['MFMODULE_LOWERCASE'] = mod
 
 cmd = "_packaging_get_module_dependencies 1 2 3"
 x = subprocess.run(["_packaging_get_module_dependencies", "1", "2", "3"],

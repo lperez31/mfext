@@ -19,8 +19,8 @@ if mod == "mfext":
     env['MFMODULE_HOME'] = os.environ['MFEXT_HOME']
     env['MFMODULE_LOWERCASE'] = mod
 
-cmd = "_packaging_get_module_dependencies 1 2 3"
-x = subprocess.run(["_packaging_get_module_dependencies", "1", "2", "3"],
+cmd = "_packaging_get_module_dependencies 1 2"
+x = subprocess.run(["_packaging_get_module_dependencies", "1", "2"],
                    stdout=subprocess.PIPE, env=dict(os.environ, **env))
 if x.returncode != 0:
     raise Exception("_packaging_get_module_dependencies error")

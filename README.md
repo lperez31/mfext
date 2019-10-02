@@ -20,11 +20,12 @@
 * [2\. Quickstart](#2-quickstart)
 * [3\. More details](#3-more-details)
 * [4\. Full list of components](#4-full-list-of-components)
-* [5\. Reference documentation](#5-reference-documentation)
-* [6\. Installation guide](#6-installation-guide)
-* [7\. Contributing guide](#7-contributing-guide)
-* [8\. Code of Conduct](#8-code-of-conduct)
-* [9\. Sponsors](#9-sponsors)
+* [5\. Concepts](#5-concepts)
+* [6\. Reference documentation](#6-reference-documentation)
+* [7\. Installation guide](#7-installation-guide)
+* [8\. Contributing guide](#8-contributing-guide)
+* [9\. Code of Conduct](#9-code-of-conduct)
+* [10\. Sponsors](#10-sponsors)
 
 
 
@@ -58,49 +59,6 @@ Installing the **MFEXT** module is safe, it can't break anything on your system.
 You have more time? Look at this 30 seconds screencast:
 
 [![asciicast](https://asciinema.org/a/uNsG6AaPkMeZ3Lb8NsW4vMkYa.png)](https://asciinema.org/a/uNsG6AaPkMeZ3Lb8NsW4vMkYa)
-
-### 1.1 Concepts
-
-#### 1.1.1 Layers
-
-**MFEXT** is staged in logical and/or technical **layers**. Some of them are optional,
-you can choose not to install them (for example, layers about Python2). Each layer contains
-one or several **components**.
-
-For example, here are some **layers** hosted on this repository:
-
-- `python3_core` which contains several core **components** for Python3: `python3`, `pip`, `virtualenv`...
-- `python3` which contains several additional **components** for Python3: `requests`, `psutil`, `filelock`...
-- `openresty` which contains: `openresty`, `lua_restry_http`, `lua_resty_cookie`... **components**
-- `nodejs` which contains only one package: `nodejs`
-- [...]
-
-You can inspect installed layers with the `layers` utility.
-
-#### 1.1.2 Components
-
-Most of theses **components** are not
-maintained by the MetWork Framework team. For example, you will find inside a recent [Python](http://www.python.org) interpreter or some well known libraries like [CURL](https://curl.haxx.se/) or [GLIB2](https://developer.gnome.org/glib/).
-
-You can inspect installed components with the `components` utility.
-
-#### 1.1.3 Add-ons
-
-This repository holds a lot of **layers** but you will also find extra **layers** in **MFEXT addons**
-repositories. Let's mention in particular [mfextaddon_scientific](https://github.com/metwork-framework/mfextaddon_scientific) which provides some **layers** with a lot of geospatial and
-scientific tools.
-
-An add-on to **MFEXT** can be maintained by anyone and can be hosted anywhere. But below, you
-will find officially maintained **MFEXT addons**:
-
-| Addon | Description |
-| --- | --- |
-| [mfextaddon_scientific](https://github.com/metwork-framework/mfextaddon_scientific) | mfext Add-on for scientific libraries and tools |
-| [mfextaddon_python3_ia](https://github.com/metwork-framework/mfextaddon_python3_ia) | mfext Add-on for deep learning/IA libraries and tools for Python3 |
-| [mfextaddon_mapserver](https://github.com/metwork-framework/mfextaddon_mapserver) | mfext Add-on which provides [Mapserver software](https://mapserver.org) and libraries around ([mapserverapi](https://github.com/metwork-framework/mapserverapi)) and [mapserverapi_python](https://github.com/metwork-framework/mapserverapi_python)) |
-| [mfextaddon_vim](https://github.com/metwork-framework/mfextaddon_vim) | mfext Add-on which provides an opinionated vim editor (including configuration) for use in MetWork Framework env |
-
-An add-on can contain one or several extra **layers**.
 
 ## 2. Quickstart
 
@@ -302,13 +260,6 @@ $ python --version
 Python 3.7.3
 $ # => the mfext environment is still loaded
 ```
-
-
-
-
-
-
-
 ## 4. Full list of components
 
 | Name | Version | Layer |
@@ -563,14 +514,50 @@ $ # => the mfext environment is still loaded
 
 *(247 components)*
 
+## 5 Concepts
 
+### 5.1 Layers
 
+**MFEXT** is staged in logical and/or technical **layers**. Some of them are optional,
+you can choose not to install them (for example, layers about Python2). Each layer contains
+one or several **components**.
 
+For example, here are some **layers** hosted on this repository:
 
+- `python3_core` which contains several core **components** for Python3: `python3`, `pip`, `virtualenv`...
+- `python3` which contains several additional **components** for Python3: `requests`, `psutil`, `filelock`...
+- `openresty` which contains: `openresty`, `lua_restry_http`, `lua_resty_cookie`... **components**
+- `nodejs` which contains only one package: `nodejs`
+- [...]
 
+You can inspect installed layers with the `layers` utility.
 
+### 5.2 Components
 
-## 5. Reference documentation
+Most of theses **components** are not
+maintained by the MetWork Framework team. For example, you will find inside a recent [Python](http://www.python.org) interpreter or some well known libraries like [CURL](https://curl.haxx.se/) or [GLIB2](https://developer.gnome.org/glib/).
+
+You can inspect installed components with the `components` utility.
+
+### 5.3 Add-ons
+
+This repository holds a lot of **layers** but you will also find extra **layers** in **MFEXT addons**
+repositories. Let's mention in particular [mfextaddon_scientific](https://github.com/metwork-framework/mfextaddon_scientific) which provides some **layers** with a lot of geospatial and
+scientific tools.
+
+An add-on to **MFEXT** can be maintained by anyone and can be hosted anywhere. But below, you
+will find officially maintained **MFEXT addons**:
+
+| Addon | Description |
+| --- | --- |
+| [mfextaddon_scientific](https://github.com/metwork-framework/mfextaddon_scientific) | mfext Add-on for scientific libraries and tools |
+| [mfextaddon_python3_ia](https://github.com/metwork-framework/mfextaddon_python3_ia) | mfext Add-on for deep learning/IA libraries and tools for Python3 |
+| [mfextaddon_mapserver](https://github.com/metwork-framework/mfextaddon_mapserver) | mfext Add-on which provides [Mapserver software](https://mapserver.org) and libraries around ([mapserverapi](https://github.com/metwork-framework/mapserverapi)) and [mapserverapi_python](https://github.com/metwork-framework/mapserverapi_python)) |
+| [mfextaddon_vim](https://github.com/metwork-framework/mfextaddon_vim) | mfext Add-on which provides an opinionated vim editor (including configuration) for use in MetWork Framework env |
+
+An add-on can contain one or several extra **layers**.
+
+## 6. Reference documentation
 
 - (for **master (development)** version), see [this dedicated site](http://metwork-framework.org/pub/metwork/continuous_integration/docs/master/mfext/) for reference documentation.
 - (for **latest released stable** version), see [this dedicated site](http://metwork-framework.org/pub/metwork/releases/docs/stable/mfext/) for reference documentation.
@@ -582,26 +569,26 @@ And if you are looking for an old released version, you can search [here](http:/
 
 
 
-## 6. Installation guide
+## 7. Installation guide
 
 See [this document](.metwork-framework/install_a_metwork_package.md).
 
 
 
 
-## 7. Contributing guide
+## 8. Contributing guide
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 
 
-## 8. Code of Conduct
+## 9. Code of Conduct
 
 See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file.
 
 
 
-## 9. Sponsors
+## 10. Sponsors
 
 *(If you are officially paid to work on MetWork Framework, please contact us to add your company logo here!)*
 

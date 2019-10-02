@@ -47,7 +47,7 @@ $ # This is old!
 $ # Load a mfext profile for the current session
 $ . /opt/metwork-mfext/share/interactive_profile
 
-$ # Test the python version inside the profile
+$ # Now we have loaded the profile, test the python version again
 $ python --version
 Python 3.7.3
 $ # Great, a newer version!

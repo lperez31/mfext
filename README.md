@@ -33,6 +33,8 @@
 
 This is a "dependencies package" ridiculously easy to install which adds plenty of recent softwares to a Linux distribution, especially for scientific and meteorology domain, but not only!
 
+**MFEXT** is safe, multi-environment and it supports several languages (python, nodejs, java, lua...). With **MFEXT** you can run several micro-services on the same machine, each micro-service running in its own environment, with its own stack of dependancies.
+
 In 5 seconds, here is how **MFEXT** works:
 
 ```console

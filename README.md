@@ -30,11 +30,7 @@
 
 ## 1. What is MFEXT ?
 
-This is the **M**etwork **F**ramework "**EXT**ernal dependencies" **module**. This module is a "dependencies package" ridiculously easy to install which add to a Linux distribution plenty of recent softwares, especially for scientific and meteorology domain. 
-
-Installing **MFEXT** module is safe, it can't break anything on your system. It does not contain any services, it is just a bunch of files and directories installed in `/opt` directory.
-
-**MFEXT** can be used alone, or as a dependency of other MetWork Framework **modules** (like [mfserv](https://github.com/metwork-framework/mfserv) or [mfdata](https://github.com/metwork-framework.org/mfdata)).
+This module is a "dependencies package" ridiculously easy to install which add to a Linux distribution plenty of recent softwares, especially for scientific and meteorology domain.
 
 In 5 seconds, here is how **MFEXT** works:
 
@@ -52,6 +48,12 @@ $ python --version
 Python 3.7.3
 $ # Great, a newer version!
 ```
+
+**MFEXT** is the **M**etwork **F**ramework "**EXT**ernal dependencies" **module**. 
+
+Installing the **MFEXT** module is safe, it can't break anything on your system. It does not contain any services, it is just a bunch of files and directories installed in `/opt` directory.
+
+**MFEXT** can be used alone, or as a dependency of other MetWork Framework **modules** (like [mfserv](https://github.com/metwork-framework/mfserv) or [mfdata](https://github.com/metwork-framework.org/mfdata)).
 
 You have more time? Look at this 30 seconds screencast:
 

@@ -32,10 +32,26 @@
 
 This is the **M**etwork **F**ramework "**EXT**ernal dependencies" **module**. This module is a "dependencies package" ridiculously easy to install which add to a Linux distribution plenty of recent softwares, especially for scientific and meteorology domain. 
 
-This module does not contain any services, it is just a bunch of files and directories installed in `/opt` directory
-(so installing **MFEXT** module can't break anything on your system).
+Installing **MFEXT** module is safe, it can't break anything on your system. It does not contain any services, it is just a bunch of files and directories installed in `/opt` directory.
 
-Usually **MFEXT** is just a dependency of other MetWork Framework **modules** (like [mfserv](https://github.com/metwork-framework/mfserv) or [mfdata](https://github.com/metwork-framework.org/mfdata)) but it can also be used alone like you can see on the short (< 30s) following screencast:
+**MFEXT** can be used alone, or as a dependency of other MetWork Framework **modules** (like [mfserv](https://github.com/metwork-framework/mfserv) or [mfdata](https://github.com/metwork-framework.org/mfdata)).
+
+In 5 seconds, here is how **MFEXT** works:
+
+```console
+# What python version do I have?
+$ python --version
+Python 2.7.5 # This is old!
+
+$ # Load a mfext profile for the current session
+$ . /opt/metwork-mfext/share/interactive_profile
+
+$ # Test the python version inside the profile
+$ python --version
+Python 3.7.3 # Great, a newer version!
+```
+
+You have more time? Look at this 30 seconds screencast:
 
 [![asciicast](https://asciinema.org/a/uNsG6AaPkMeZ3Lb8NsW4vMkYa.png)](https://asciinema.org/a/uNsG6AaPkMeZ3Lb8NsW4vMkYa)
 

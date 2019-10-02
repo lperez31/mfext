@@ -49,6 +49,8 @@ Python 3.7.3
 $ # Great, a newer version!
 ```
 
+Want to know what software is included in the package? [Look here!](#4-full-list-of-components)
+
 Installing the **MFEXT** module is safe, it can't break anything on your system. It does not contain any services, it is just a bunch of files and directories installed in `/opt` directory.
 
 **MFEXT** is the **M**etwork **F**ramework "**EXT**ernal dependencies" **module**. It can be used alone, or as a dependency of other MetWork Framework **modules** (like [mfserv](https://github.com/metwork-framework/mfserv) or [mfdata](https://github.com/metwork-framework.org/mfdata)).

@@ -42,7 +42,7 @@ In 5 seconds, here is how **MFEXT** works:
 $ # What python version do I have?
 $ python --version
 Python 2.7.5
-$ # This is old!
+$ # This is an old version!
 
 $ # Load a mfext profile for the current session
 $ . /opt/metwork-mfext/share/interactive_profile

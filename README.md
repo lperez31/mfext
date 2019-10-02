@@ -31,9 +31,9 @@
 
 ## 1. What is MFEXT ?
 
-This is a "dependencies package" ridiculously easy to install which adds plenty of recent softwares to a Linux distribution, especially for scientific and meteorology domain, but not only!
+**MFEXT** is a "dependencies package" ridiculously easy to install which adds plenty of recent softwares to a Linux distribution, especially for scientific and meteorology domain, but not only!
 
-**MFEXT** is safe, multi-environment and it supports several languages (python, nodejs, java, lua...). With **MFEXT** you can run several micro-services on the same machine, each micro-service running in its own environment, with its own stack of dependancies.
+**MFEXT** is safe, multi-environment, it supports several languages (python, nodejs, java, lua...) and many libraries. With **MFEXT** you can run several micro-services on the same machine, each micro-service running in its own environment, with its own stack of dependencies.
 
 In 5 seconds, here is how **MFEXT** works:
 
@@ -56,9 +56,9 @@ Want to know what software is included in the package? [Look here!](#4-full-list
 
 Installing the **MFEXT** module is safe, it can't break anything on your system. It does not contain any services, it is just a bunch of files and directories installed in `/opt` directory.
 
-**MFEXT** is the **M**etwork **F**ramework "**EXT**ernal dependencies" **module**. It can be used alone, or as a dependency of other MetWork Framework **modules** (like [mfserv](https://github.com/metwork-framework/mfserv) or [mfdata](https://github.com/metwork-framework.org/mfdata)).
+**MFEXT** is the **M**etwork **F**ramework "**EXT**ernal dependencies" **module**. It can be used alone, or as a dependency of other MetWork Framework **modules** (like [mfserv](https://github.com/metwork-framework/mfserv) or [mfdata](https://github.com/metwork-framework.org/mfdata)). MetWork-Framework is an open source system for managing several applications or micro-services running on the same Linux server, production grade.
 
-You have more time? Look at this 30 seconds screencast:
+You have more time? Look at this 30 seconds screencast showcasing installation and usage of **MFEXT**:
 
 [![asciicast](https://asciinema.org/a/uNsG6AaPkMeZ3Lb8NsW4vMkYa.png)](https://asciinema.org/a/uNsG6AaPkMeZ3Lb8NsW4vMkYa)
 

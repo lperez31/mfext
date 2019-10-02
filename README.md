@@ -39,16 +39,18 @@ Installing **MFEXT** module is safe, it can't break anything on your system. It 
 In 5 seconds, here is how **MFEXT** works:
 
 ```console
-# What python version do I have?
+$ # What python version do I have?
 $ python --version
-Python 2.7.5 # This is old!
+Python 2.7.5
+$ # This is old!
 
 $ # Load a mfext profile for the current session
 $ . /opt/metwork-mfext/share/interactive_profile
 
 $ # Test the python version inside the profile
 $ python --version
-Python 3.7.3 # Great, a newer version!
+Python 3.7.3
+$ # Great, a newer version!
 ```
 
 You have more time? Look at this 30 seconds screencast:
